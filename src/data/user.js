@@ -34,7 +34,7 @@ const INFO = {
 		linkedin: "https://www.linkedin.com/in/vaibhav-kumar-vk/",
 		stackoverflow: "https://stackoverflow.com/",
 		hashnode: "https://vaibhavkumar.hashnode.dev",
-		hackerrank: "https://www.hackerrank.com/dev_kumar01?hr_r=1",
+		hackerrank: "https://www.hackerrank.com/vkdev01?hr_r=1",
 		leetcode: "https://leetcode.com/vaibhavk01"
 	},
 
