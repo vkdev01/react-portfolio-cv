@@ -84,7 +84,7 @@ export default async function Home() {
 
       <section className="grid gap-12 md:grid-cols-2">
         <div>
-          <SectionHeading eyebrow="Career" title="Experience" />
+          <SectionHeading eyebrow="Career" title="Experience" href="/career/" linkLabel="Full timeline" />
           <Timeline entries={experience} />
         </div>
         <div>
