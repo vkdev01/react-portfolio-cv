@@ -1,0 +1,86 @@
+import type { ExternalArticle } from "./types";
+
+const hashnode = (slug: string) => `https://vaibhavkumar.hashnode.dev/${slug}`;
+
+export const externalArticles: ExternalArticle[] = [
+  {
+    title: "Introduction to Stacks and Queues",
+    summary: "What stacks and queues are, how they work, and where they show up: recursion, postfix evaluation, and more.",
+    date: "2021-07-11",
+    url: hashnode("introduction-to-stacks-and-queues"),
+    source: "hashnode",
+    tags: ["DSA"],
+  },
+  {
+    title: "A new way of Scraping the Web: Requests-HTML",
+    summary: "The basics of web scraping with the Requests-HTML library by Kenneth Reitz.",
+    date: "2021-01-08",
+    url: hashnode("a-new-way-of-scraping-the-web-requests-html"),
+    source: "hashnode",
+    tags: ["Python", "Scraping"],
+  },
+  {
+    title: "Introduction to Image Classification using CNNs in PyTorch",
+    summary: "Using CNNs in PyTorch to classify images from the CIFAR-10 dataset.",
+    date: "2020-12-31",
+    url: hashnode("introduction-to-image-classification-using-cnns-in-pytorch"),
+    source: "hashnode",
+    tags: ["PyTorch", "Deep Learning"],
+  },
+  {
+    title: "Feed Forward Networks using PyTorch",
+    summary: "Different ways to implement a feed-forward neural network in PyTorch.",
+    date: "2020-12-29",
+    url: hashnode("feed-forward-networks-using-pytorch"),
+    source: "hashnode",
+    tags: ["PyTorch", "Deep Learning"],
+  },
+  {
+    title: "Ridge Regression using Neural Network",
+    summary: "Implementing ridge regression with a neural network and comparing it with scikit-learn's Ridge.",
+    date: "2020-12-29",
+    url: hashnode("ridge-regression-using-neural-network"),
+    source: "hashnode",
+    tags: ["ML"],
+  },
+  {
+    title: "Working with Hashnode RSS feed in Python",
+    summary: "Extracting feed and post details from a Hashnode blog's RSS feed with Python.",
+    date: "2020-12-28",
+    url: hashnode("working-with-hashnode-rss-feed-in-python"),
+    source: "hashnode",
+    tags: ["Python"],
+  },
+  {
+    title: "Concatenating PDF files using Python",
+    summary: "Merging multiple PDF files into one with the PyPDF2 library.",
+    date: "2020-12-22",
+    url: hashnode("concatenating-pdf-files-using-python"),
+    source: "hashnode",
+    tags: ["Python"],
+  },
+  {
+    title: "Building a Command Line File Downloader in Python",
+    summary: "Building a small CLI file downloader with Python.",
+    date: "2020-12-22",
+    url: hashnode("building-a-command-line-file-downloader-in-python"),
+    source: "hashnode",
+    tags: ["Python", "CLI"],
+  },
+  {
+    title: "Neural Style Transfer",
+    summary: "Applying a new artistic style to an image using a pre-trained convolutional neural network.",
+    date: "2020-12-16",
+    url: hashnode("neural-style-tranfer"),
+    source: "hashnode",
+    tags: ["Deep Learning"],
+  },
+  {
+    title: "Introduction to Generative-Adversarial Networks (GANs) using PyTorch",
+    summary: "What GANs are and how two competing networks learn to generate realistic data.",
+    date: "2020-12-15",
+    url: hashnode("introduction-to-generative-adversarial-networksgans-using-pytorch"),
+    source: "hashnode",
+    tags: ["PyTorch", "Deep Learning"],
+  },
+];

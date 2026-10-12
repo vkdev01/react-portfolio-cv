@@ -1,0 +1,55 @@
+import type { Project } from "./types";
+
+export const projects: Project[] = [
+  {
+    slug: "ocr-ms-fastapi",
+    title: "FastAPI OCR Microservice",
+    description: "A REST API / microservice that extracts text from images using FastAPI and PyTesseract.",
+    tags: ["Python", "FastAPI", "OCR"],
+    icon: "fastapi",
+    repo: "https://github.com/vkdev01/ocr-ms-fastapi",
+    featured: true,
+  },
+  {
+    slug: "crawler-ocr",
+    title: "Crawler OCR",
+    description: "Automatically crawls a list of links and runs OCR to extract text. Built with Python and PyTesseract.",
+    tags: ["Python", "OCR", "Scraping"],
+    icon: "python",
+    repo: "https://github.com/vkdev01/Extractor-Assignment/tree/master/pdf-extractor",
+    featured: true,
+  },
+  {
+    slug: "realtime-chat-app",
+    title: "Realtime Chat Application",
+    description: "Realtime chat built on Node.js with Express and Socket.IO.",
+    tags: ["Node", "Socket.IO", "Express"],
+    icon: "nodejs",
+    repo: "https://github.com/vkdev01/realtime-chat-app",
+    featured: true,
+  },
+  {
+    slug: "flask-code-blog",
+    title: "Flask Blog Application",
+    description: "A blog web application built with Python and Flask.",
+    tags: ["Python", "Flask"],
+    icon: "flask",
+    repo: "https://github.com/vkdev01/FlaskCodeBlog",
+  },
+  {
+    slug: "github-profile-finder",
+    title: "GitHub Profile Finder",
+    description: "A React SPA to search GitHub profiles using the GitHub API.",
+    tags: ["React", "API"],
+    icon: "react",
+  },
+  {
+    slug: "portfolio",
+    title: "This Portfolio",
+    description: "Static Next.js site with MDX articles, themes, and a showcase registry for on-site demos.",
+    tags: ["Next.js", "TypeScript", "Tailwind"],
+    icon: "nextjs",
+    repo: "https://github.com/vkdev01/react-portfolio-cv",
+    showcase: "tokenizer-playground",
+  },
+];

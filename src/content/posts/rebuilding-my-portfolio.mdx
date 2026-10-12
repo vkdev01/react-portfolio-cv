@@ -1,0 +1,31 @@
+export const metadata = {
+  title: "Rebuilding my portfolio with Next.js",
+  summary: "Why I replaced a 3-year-old Create React App portfolio with a static Next.js site, and how it is structured.",
+  date: "2026-10-13",
+  tags: ["Next.js", "Meta"],
+};
+
+My previous portfolio was a Create React App project deployed on Netlify. It worked, but content lived inside JSX and
+adding anything meant touching several components. This rewrite keeps the same pages with a cleaner foundation.
+
+## What changed
+
+- **Next.js App Router** with a fully static export, so it still runs on Netlify's free tier.
+- **Typed content files** in `src/content` for projects, articles, experience, and showcases.
+- **MDX posts** like this one, with syntax highlighting and GitHub-flavored markdown.
+- **Themes**: light/dark mode plus a switchable accent color.
+
+## Adding a post
+
+Create `src/content/posts/my-post.mdx`, starting with a metadata export followed by regular markdown:
+
+```js title="src/content/posts/my-post.mdx"
+export const metadata = {
+  title: "My post",
+  summary: "One-line summary for cards.",
+  date: "2026-10-13",
+  tags: ["Notes"],
+};
+```
+
+It is picked up automatically on the next build.
