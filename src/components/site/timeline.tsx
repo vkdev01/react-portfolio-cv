@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element -- static export serves images as-is */
 import type { TimelineEntry } from "@/content/types";
+import { Badge } from "@/components/ui/badge";
 
-export function Timeline({ entries }: { entries: TimelineEntry[] }) {
+export function Timeline({ entries, showSkills = false }: { entries: TimelineEntry[]; showSkills?: boolean }) {
   return (
     <ol className="relative space-y-6 border-l pl-6">
       {entries.map((entry) => (
@@ -26,6 +27,17 @@ export function Timeline({ entries }: { entries: TimelineEntry[] }) {
             {entry.start} – {entry.end ?? <span className="text-brand">Present</span>}
           </p>
           {entry.description && <p className="mt-2 text-sm text-muted-foreground">{entry.description}</p>}
+          {showSkills && entry.skills && (
+            <ul className="mt-3 flex flex-wrap gap-1.5" aria-label={`Skills used at ${entry.org}`}>
+              {entry.skills.map((skill) => (
+                <li key={skill}>
+                  <Badge variant="secondary" className="font-mono text-[11px]">
+                    {skill}
+                  </Badge>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       ))}
     </ol>

@@ -21,7 +21,7 @@ export default function CareerPage() {
       <PageHeader
         eyebrow="Career"
         title="Where I've worked & studied"
-        description="A timeline of my roles and education, from data analysis and technical writing to building software at Cisco."
+        description="A timeline of my roles and education, and the tools I've used along the way, up to building MCP servers, AI agents and full-stack platforms at Cisco."
       />
 
       <div className="grid gap-4 sm:grid-cols-2">
@@ -51,7 +51,7 @@ export default function CareerPage() {
       <section className="mt-20 grid gap-12 md:grid-cols-2">
         <div>
           <SectionHeading eyebrow="Work" title="Experience" />
-          <Timeline entries={experience} />
+          <Timeline entries={experience} showSkills />
         </div>
         <div>
           <SectionHeading eyebrow="Learning" title="Education" />

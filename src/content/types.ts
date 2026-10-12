@@ -89,4 +89,5 @@ export interface TimelineEntry {
   end?: string;
   logo?: string;
   description?: string;
+  skills?: string[];
 }

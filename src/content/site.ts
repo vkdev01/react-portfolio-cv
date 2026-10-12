@@ -34,18 +34,18 @@ export const socials: SocialLink[] = [
 ];
 
 export const skills: Record<string, string[]> = {
-  Languages: ["Python", "TypeScript", "JavaScript", "C/C++"],
-  Backend: ["FastAPI", "Django", "Flask", "Node", "Express", "Fastify"],
+  Languages: ["Java", "Python", "TypeScript", "JavaScript"],
+  Backend: ["Spring Boot", "FastAPI", "Node.js", "REST APIs"],
+  Frontend: ["Next.js", "React.js", "Highcharts"],
+  "AI / Agents": ["MCP", "FastMCP", "Tool Calling", "Agentic AI", "LangChain", "Spring AI"],
   "ML / DL": ["PyTorch", "Scikit-Learn", "OpenCV"],
-  DevOps: ["AWS", "Docker", "Nginx"],
-  Databases: ["PostgreSQL", "MySQL", "MongoDB", "SQLite"],
-  Misc: ["Firebase", "Socket.IO", "Selenium", "Android"],
+  "Data & DevOps": ["Apache Solr", "Oracle DB", "Teradata", "PostgreSQL", "Docker", "Jenkins", "CI/CD"],
 };
 
 export const profileSnippet = `const vaibhav = {
   pronouns: ["he", "him"],
-  code: ["Python", "TypeScript", "JavaScript", "C/C++"],
-  askMeAbout: ["web dev", "full stack", "deep learning"],
+  code: ["Java", "Python", "TypeScript", "JavaScript"],
+  askMeAbout: ["agentic AI", "MCP", "full stack", "deep learning"],
   architecture: ["serverless", "microservices", "SPAs"],
   currentFocus: "Actively working",
   funFact: "${site.funFact}",
