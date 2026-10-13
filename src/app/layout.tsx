@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { site } from "@/content/site";
 import { Providers } from "@/components/theme/providers";
@@ -26,10 +27,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: accentInitScript }} />
-      </head>
       <body className="flex min-h-full flex-col">
+        <Script id="accent-init" strategy="beforeInteractive">
+          {accentInitScript}
+        </Script>
         <Providers>
           <Backdrop />
           <Navbar />

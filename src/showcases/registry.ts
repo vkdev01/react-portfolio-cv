@@ -6,4 +6,5 @@ import type { ComponentType } from "react";
  */
 export const showcaseLoaders: Record<string, () => Promise<{ default: ComponentType }>> = {
   "tokenizer-playground": () => import("./tokenizer-playground"),
+  "gradient-descent": () => import("./gradient-descent"),
 };
