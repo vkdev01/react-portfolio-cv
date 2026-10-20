@@ -2,6 +2,17 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
+    slug: "agentic-search",
+    title: "Agentic Search",
+    description:
+      "A ChatGPT-style research agent: plans web searches over a self-hosted SearXNG, then streams answers from Sarvam-105B with citations, charts, diagrams and a research graph. Every LLM call is logged with tokens and latency.",
+    tags: ["Next.js", "FastAPI", "LLM", "Agents"],
+    icon: "agent",
+    repo: "https://github.com/vkdev01/agentic-search",
+    featured: true,
+    year: 2026,
+  },
+  {
     slug: "ocr-ms-fastapi",
     title: "FastAPI OCR Microservice",
     description: "A REST API / microservice that extracts text from images using FastAPI and PyTesseract.",
@@ -48,7 +59,7 @@ export const projects: Project[] = [
     title: "This Portfolio",
     description: "Static Next.js site with MDX articles, themes, and a showcase registry for on-site demos.",
     tags: ["Next.js", "TypeScript", "Tailwind"],
-    icon: "nextjs",
+    icon: "react",
     repo: "https://github.com/vkdev01/react-portfolio-cv",
     showcase: "tokenizer-playground",
   },

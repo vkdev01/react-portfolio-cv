@@ -21,6 +21,7 @@ export type TechIconKey =
   | "react"
   | "nextjs"
   | "pytorch"
+  | "agent"
   | "generic";
 
 export interface Project {
@@ -87,7 +88,10 @@ export interface TimelineEntry {
   role: string;
   start: string;
   end?: string;
+  /** Image path under /public; takes precedence over `brand`. */
   logo?: string;
+  /** Brand icon key from `components/site/timeline.tsx`, for orgs without a logo image. */
+  brand?: "cisco";
   description?: string;
   skills?: string[];
 }
