@@ -1,6 +1,6 @@
 import type { IconType } from "react-icons";
 import { SiFastapi, SiFlask, SiNextdotjs, SiNodedotjs, SiPython, SiPytorch, SiReact } from "react-icons/si";
-import { Code2 } from "lucide-react";
+import { Code2, Telescope } from "lucide-react";
 import type { TechIconKey } from "@/content/types";
 
 const ICONS: Record<TechIconKey, IconType | typeof Code2> = {
@@ -11,6 +11,7 @@ const ICONS: Record<TechIconKey, IconType | typeof Code2> = {
   react: SiReact,
   nextjs: SiNextdotjs,
   pytorch: SiPytorch,
+  agent: Telescope,
   generic: Code2,
 };
 

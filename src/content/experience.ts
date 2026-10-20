@@ -5,6 +5,7 @@ export const experience: TimelineEntry[] = [
     org: "Cisco",
     role: "Software Engineer II",
     start: "Feb 2024",
+    brand: "cisco",
     skills: [
       "Python",
       "Java",
