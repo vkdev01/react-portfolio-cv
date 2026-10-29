@@ -18,6 +18,7 @@ All content lives in `src/content`:
 | --- | --- |
 | Name, intro, nav, socials, skills | `site.ts` |
 | Projects (repo / live / demo links) | `projects.ts` |
+| Curated learning repos (`/learning`) | `learning.ts` |
 | External articles (Hashnode, Medium…) | `articles.ts` |
 | On-site posts | `posts/*.mdx` with `export const metadata = {...}` |
 | Work & education | `experience.ts` |
