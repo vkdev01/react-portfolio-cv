@@ -41,6 +41,20 @@ export interface Project {
   year?: number;
 }
 
+/** A self-authored guide or tutorial repo, listed on /learning. */
+export interface LearningRepo {
+  slug: string;
+  title: string;
+  description: string;
+  /** Short scope facts, e.g. "11 chapters". */
+  highlights: string[];
+  tags: string[];
+  icon: TechIconKey;
+  repo: string;
+  /** Published site (e.g. GitHub Pages) where the material can be read. */
+  live?: string;
+}
+
 export type ArticleSource = "local" | "hashnode" | "medium" | "devto" | "linkedin" | "other";
 
 /** An article hosted elsewhere; local MDX posts are discovered from `content/posts`. */

@@ -19,6 +19,7 @@ export const site = {
     { href: "/about/", label: "About" },
     { href: "/career/", label: "Career" },
     { href: "/projects/", label: "Projects" },
+    { href: "/learning/", label: "Learning" },
     { href: "/articles/", label: "Articles" },
     { href: "/showcase/", label: "Showcase" },
   ],
