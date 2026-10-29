@@ -22,6 +22,7 @@ export type TechIconKey =
   | "nextjs"
   | "pytorch"
   | "agent"
+  | "terminal"
   | "generic";
 
 export interface Project {
@@ -31,6 +32,8 @@ export interface Project {
   tags: string[];
   icon: TechIconKey;
   repo?: string;
+  /** Source is not public yet: the repo button is shown disabled with a "Private" label. */
+  repoPrivate?: boolean;
   live?: string;
   /** Slug of an entry in `showcases.ts` when the project has an on-site demo. */
   showcase?: string;
