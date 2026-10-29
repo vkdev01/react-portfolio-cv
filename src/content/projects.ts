@@ -2,6 +2,18 @@ import type { Project } from "./types";
 
 export const projects: Project[] = [
   {
+    slug: "indus-code",
+    title: "Indus Code",
+    description:
+      "An agentic coding assistant in the spirit of Copilot and Claude Code. Each chat runs in its own disposable sandbox in Ask, Plan or Agent mode, over persistent sessions, with pluggable LLM providers (Sarvam, Ollama, OpenRouter). Ships as a CLI, a FastAPI server and a React web UI.",
+    tags: ["Python", "FastAPI", "React", "LLM", "Agents"],
+    icon: "terminal",
+    repo: "https://github.com/vkdev01/indus-code",
+    repoPrivate: true,
+    featured: true,
+    year: 2026,
+  },
+  {
     slug: "agentic-search",
     title: "Agentic Search",
     description:

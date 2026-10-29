@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight, Lock, Play } from "lucide-react";
 import { FaGithub } from "react-icons/fa6";
 import type { Project } from "@/content/types";
 import { Badge } from "@/components/ui/badge";
@@ -23,7 +23,18 @@ export function ProjectCard({ project }: { project: Project }) {
               <Play className="size-4" />
             </Link>
           )}
-          {project.repo && (
+          {project.repoPrivate ? (
+            <span
+              role="img"
+              aria-label={`${project.title} source code is private for now`}
+              title="Source code is private for now"
+              className="relative z-10 inline-flex h-8 cursor-not-allowed items-center gap-1.5 rounded-md px-2 text-xs text-muted-foreground/70"
+            >
+              <FaGithub className="size-4" />
+              <Lock className="size-3" />
+              Private
+            </span>
+          ) : project.repo && (
             <a
               href={project.repo}
               target="_blank"
