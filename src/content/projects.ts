@@ -25,6 +25,17 @@ export const projects: Project[] = [
     year: 2026,
   },
   {
+    slug: "shilp",
+    title: "shilp",
+    description:
+      "A model-serving stack built from scratch: pull a model from Hugging Face, reshape it (convert, quantize, prune layers, merge LoRA), and serve it over Ollama- and OpenAI-compatible APIs on llama.cpp or plain PyTorch. A Next.js dashboard shows live TTFT, latency percentiles, tok/s and errors from per-request telemetry.",
+    tags: ["Python", "FastAPI", "llama.cpp", "Next.js", "LLM Inference"],
+    icon: "pytorch",
+    repo: "https://github.com/vkdev01/shilp",
+    featured: true,
+    year: 2026,
+  },
+  {
     slug: "ocr-ms-fastapi",
     title: "FastAPI OCR Microservice",
     description: "A REST API / microservice that extracts text from images using FastAPI and PyTesseract.",
