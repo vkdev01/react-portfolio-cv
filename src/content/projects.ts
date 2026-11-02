@@ -32,6 +32,12 @@ export const projects: Project[] = [
     tags: ["Python", "FastAPI", "llama.cpp", "Next.js", "LLM Inference"],
     icon: "pytorch",
     repo: "https://github.com/vkdev01/shilp",
+    // jsDelivr, pinned to a commit: raw.githubusercontent serves MP4 as octet-stream, which Safari will not play.
+    media: {
+      video: "https://cdn.jsdelivr.net/gh/vkdev01/shilp@90928e5/assets/shilp-ui.mp4",
+      poster: "https://cdn.jsdelivr.net/gh/vkdev01/shilp@90928e5/assets/shilp-ui-poster.jpg",
+      alt: "shilp's serving dashboard: live latency and throughput charts, an API playground streaming a reply with per-token metrics, and a request log",
+    },
     featured: true,
     year: 2026,
   },

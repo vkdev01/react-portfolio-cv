@@ -4,11 +4,13 @@ import { FaGithub } from "react-icons/fa6";
 import type { Project } from "@/content/types";
 import { Badge } from "@/components/ui/badge";
 import { SpotlightCard } from "./spotlight-card";
+import { ProjectVideo } from "./project-video";
 import { TechIcon } from "./tech-icon";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <SpotlightCard className="flex h-full flex-col p-5">
+      {project.media && <ProjectVideo media={project.media} />}
       <div className="flex items-start justify-between gap-3">
         <span className="inline-flex size-10 items-center justify-center rounded-lg border bg-background/60 text-brand">
           <TechIcon name={project.icon} className="size-5" />
