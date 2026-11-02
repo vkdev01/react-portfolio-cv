@@ -37,8 +37,16 @@ export interface Project {
   live?: string;
   /** Slug of an entry in `showcases.ts` when the project has an on-site demo. */
   showcase?: string;
+  /** A muted, looping demo clip shown at the top of the card; may be an external URL. */
+  media?: ProjectMedia;
   featured?: boolean;
   year?: number;
+}
+
+export interface ProjectMedia {
+  video: string;
+  poster: string;
+  alt: string;
 }
 
 /** A self-authored guide or tutorial repo, listed on /learning. */
