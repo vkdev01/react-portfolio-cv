@@ -94,17 +94,19 @@ export interface PostMeta {
   draft?: boolean;
 }
 
-export type ShowcaseKind = "embedded" | "external";
+export type ShowcaseKind = "embedded" | "external" | "video";
 
 export interface Showcase {
   slug: string;
   title: string;
   description: string;
   tags: string[];
-  /** `embedded` renders a component from `src/showcases/registry.ts` at /showcase/[slug]. */
+  /** `embedded` renders a component from `src/showcases/registry.ts` at /showcase/[slug]; `video` plays the project's `media` in a dialog. */
   kind: ShowcaseKind;
   href?: string;
   repo?: string;
+  /** For `video`: slug of the project whose `media` is played. */
+  project?: string;
   status?: "live" | "wip" | "archived";
 }
 

@@ -42,7 +42,7 @@ export const projects: Project[] = [
     title: "shilp",
     description:
       "A model-serving stack built from scratch: pull a model from Hugging Face, reshape it (convert, quantize, prune layers, merge LoRA), and serve it over Ollama- and OpenAI-compatible APIs on llama.cpp or plain PyTorch. A Next.js dashboard shows live TTFT, latency percentiles, tok/s and errors from per-request telemetry.",
-    tags: ["Python", "FastAPI", "llama.cpp", "Next.js", "LLM Inference"],
+    tags: ["Python", "FastAPI", "llama.cpp", "Transformers", "Next.js", "LLM Inference"],
     icon: "pytorch",
     repo: "https://github.com/vkdev01/shilp",
     // jsDelivr, pinned to a commit: raw.githubusercontent serves MP4 as octet-stream, which Safari will not play.
