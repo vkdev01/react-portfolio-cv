@@ -10,7 +10,7 @@ import { TechIcon } from "./tech-icon";
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <SpotlightCard className="flex h-full flex-col p-5">
-      {project.media && <ProjectVideo media={project.media} />}
+      {project.media && <ProjectVideo media={project.media} title={project.title} />}
       <div className="flex items-start justify-between gap-3">
         <span className="inline-flex size-10 items-center justify-center rounded-lg border bg-background/60 text-brand">
           <TechIcon name={project.icon} className="size-5" />
