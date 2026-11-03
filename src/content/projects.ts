@@ -10,6 +10,12 @@ export const projects: Project[] = [
     icon: "terminal",
     repo: "https://github.com/vkdev01/indus-code",
     repoPrivate: true,
+    // Served from this site: the repo is private, so no CDN can read its assets.
+    media: {
+      video: "/media/indus-code-ui.mp4",
+      poster: "/media/indus-code-ui-poster.jpg",
+      alt: "indus-code's web UI: picking a mode, an Agent task approved step by step that writes code and tests, fixes a failing test and finishes green, then the workspace files and Git panel",
+    },
     featured: true,
     year: 2026,
   },
@@ -21,6 +27,13 @@ export const projects: Project[] = [
     tags: ["Next.js", "FastAPI", "LLM", "Agents"],
     icon: "agent",
     repo: "https://github.com/vkdev01/agentic-search",
+    media: {
+      video:
+        "https://cdn.jsdelivr.net/gh/vkdev01/agentic-search@9ccbba2d0fe996e36d85776c05af71364b421099/assets/agentic-search-ui.mp4",
+      poster:
+        "https://cdn.jsdelivr.net/gh/vkdev01/agentic-search@9ccbba2d0fe996e36d85776c05af71364b421099/assets/agentic-search-ui-poster.jpg",
+      alt: "Agentic Search answering a question: planned web searches, ten sources, a comparison with inline citations, and the research graph of queries and sources",
+    },
     featured: true,
     year: 2026,
   },
